@@ -35,7 +35,7 @@ public class CoinThingTest {
     }
 
     /**
-     * Test of main method, of class CoinThing.
+     * Test of CoinThing.
      */
     @Test
     public void emptyArray() {
@@ -45,7 +45,6 @@ public class CoinThingTest {
         String[] res = c.changeMaker(a, 0);
         int [] exp = null;
         assertEquals(exp,res);
-        // TODO review the generated test code and remove the default call to fail.
 
     }
     @Test
@@ -56,7 +55,6 @@ public class CoinThingTest {
         String[] res = c.changeMaker(a, 25);
         String [] exp = {"25"};
         assertEquals(exp,res);
-        // TODO review the generated test code and remove the default call to fail.
 
     }
     @Test
@@ -67,7 +65,6 @@ public class CoinThingTest {
         String[] res = c.changeMaker(a, 64);
         String [] exp = {"25","25","10","1","1","1","1"};
         assertEquals(exp,res);
-        // TODO review the generated test code and remove the default call to fail.
 
     }
     @Test
@@ -78,8 +75,6 @@ public class CoinThingTest {
         String[] res = c.changeMaker(a, 15);
         String [] exp = {"10","5"};
         assertEquals(exp,res);
-
-        // TODO review the generated test code and remove the default call to fail.
 
     }
     
