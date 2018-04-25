@@ -1,9 +1,5 @@
 package cointhing;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.junit.jupiter.api.Test;
-
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.*;
@@ -78,9 +74,9 @@ public class CoinThingTest {
 
     }
     @Test
-    public void bray() {
+    public void test4() {
         int[] a = {1,5,12,25};
-        System.out.println("bray");
+        System.out.println("Test 4");
         CoinThing c = new CoinThing();
         String[] res = c.changeMaker(a, 16);
         String [] exp = {"1","5","5","5"};

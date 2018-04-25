@@ -50,7 +50,7 @@ public class CoinThing {
             counter = i;
             while(counter>0) {
             		answer[counter2] = Integer.toString(coinTable[counter]);
-            		System.out.println(answer[counter2]);
+//            		System.out.println(answer[counter2]);
             		counter2++;
             		counter = counter - coinTable[counter];
             }
