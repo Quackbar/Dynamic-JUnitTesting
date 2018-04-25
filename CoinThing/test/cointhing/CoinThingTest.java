@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cointhing;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 import org.junit.*;
 import static org.junit.Assert.assertEquals;
@@ -12,6 +11,7 @@ import static org.junit.Assert.*;
 /**
  *
  * @author samluther
+ * @author mattwi
  */
 public class CoinThingTest {
     
@@ -63,7 +63,7 @@ public class CoinThingTest {
         System.out.println("Test 2");
         CoinThing c = new CoinThing();
         String[] res = c.changeMaker(a, 64);
-        String [] exp = {"25","25","10","1","1","1","1"};
+        String [] exp = {"1","1","1","1","10","25","25"};
         assertEquals(exp,res);
 
     }
@@ -73,9 +73,18 @@ public class CoinThingTest {
         System.out.println("Test 3");
         CoinThing c = new CoinThing();
         String[] res = c.changeMaker(a, 15);
-        String [] exp = {"10","5"};
+        String [] exp = {"5","10"};
         assertEquals(exp,res);
 
     }
-    
+    @Test
+    public void bray() {
+        int[] a = {1,5,12,25};
+        System.out.println("bray");
+        CoinThing c = new CoinThing();
+        String[] res = c.changeMaker(a, 16);
+        String [] exp = {"1","5","5","5"};
+        assertEquals(exp,res);
+
+    }
 }
